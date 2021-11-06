@@ -1,0 +1,146 @@
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+   
+  }
+
+  .principalInsta{
+  margin: 10px;  
+  width: 100%;
+
+  position: absolute;
+  top: -40px;
+
+
+
+  }
+
+#ACESSAR1{
+
+width: 200PX;
+height: 30PX;
+background-color: #0095f6;
+border-radius: 5px;
+position: absolute;
+top: 335px;
+left: 245px;
+}
+
+#imgUsuario1{
+
+width: 120px;
+height: 120px;
+border: 1px solid black;
+border-radius: 5px;
+position: absolute;
+top: 200px;
+
+}
+
+
+
+  .celularInsta{
+    width: 50%;
+  }
+
+
+.grupo1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 690px;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    border: 1px solid transparent;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+
+
+}
+
+
+ .grupo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 50%;
+    height: 60px;
+    position: absolute;
+    top: 700px;
+    margin: 2px;
+    left: 680px;
+    z-index: -1;
+    border: 1px solid transparent;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+  }
+
+
+
+
+
+ .not-account{
+color: rgb(160, 160, 160);
+
+ }
+
+ .link-blue {
+    color: #0095f6;
+  }
+
+
+  #appBaixarImg{
+border-radius: 5px;
+width: 120px;
+height: 40px;
+position: absolute;
+top: 980px;
+left: 820px;
+
+  }
+
+
+  #appBaixarImgStore{
+border-radius: 5px;
+width: 130px;
+height: 40px;
+position: absolute;
+top: 980px;
+left: 1120px; 
+  }
+  
+  #rmConta{
+
+   color: blueviolet; 
+
+  }
+
+  .baixeOApp{
+
+    position: relative;
+    left: 300px;
+    top: 950px;
+
+  }
+
+
+ 
