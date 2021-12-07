@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu do Sistema</title>
+    <link rel="stylesheet" type="text/css"
+    href="../PROJETOS/Bootstrap/css/bootstrap.min.css">
+<script rel="text/javascript"
+    src="../PROJETOS/Bootstrap/index.js"></script>
+<link rel="stylesheet" type="text/css"
+    href="../PROJETOS/Bootstrap/index.css">
+<link rel="stylesheet" type="text/css"
+    href="../PROJETOS/Bootstrap/js/bootstrap.bundle.min.js">
+
+    <style>
+        .navbar{
+            background-color: aqua;
+        }
+      .modal-content{
+        background-color: darkcyan;
+        width: 440px;
+        height: 720px;
+
+      }
+
+
+        body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+}
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  shadow text-center navbarMenu">
+        <a href="#"><img class="logoNav1" src="../PROJETOS/Bootstrap/imagens/dafonteLogo.jpg" width="150px" height="130px"></a>
+
+
+        <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+
+           <!-- BOTÃO DO MODAL SIDEBAR-->
+           <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+           class="btn btn-success">OPÇÕES</button>
+
+
+            
+</div>
+</nav>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                    <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Menu de opções</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+
+                            <img id="imgSideBar"
+                                    src="../PROJETOS/Bootstrap/imagens/livro-de-contatos color.png">
+                            <label class="labelSide">Loja 01 - Jaboatão</label>
+                            </br></br>
+                            <b class="contatosSide">(81)3518-5933</b>
+                            <hr>
+                    </div>
+                    <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+            </div>
+    </div>
+</div>
+
+</body>
+</html>
