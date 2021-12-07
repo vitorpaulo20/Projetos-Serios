@@ -1,0 +1,107 @@
+.modal-title{
+color: white;
+}
+.quem-somos{
+    color: whitesmoke;
+    background-image: url(../Bootstrap/imagens/roadLights.jpg);
+    background-size: 720px 1080px;
+    }
+h5{
+color: black;
+}
+
+  
+    h3{
+    color: white;
+    }
+                    
+.labelSide{
+    color: white;
+    
+    }
+    .contatosSide{
+        position: absolute;
+        left: 65px;
+        top: 55px;
+        margin: 10px;
+        font-size: 22px;
+        color: white;
+        }
+
+        #parceiros{
+            color: white;
+            padding-bottom: 180px;
+          
+            }
+
+            .byPaulo{
+                color: whitesmoke;
+                background-color: black;
+                position: relative;
+                font-size: 16px;
+                top: 20px;
+                padding-bottom: -10px;
+
+            }
+
+            .collapse{
+                margin: 2px;
+                }
+
+                #imgSideBar{
+                    width: 25px;
+                    height: 25px; 
+                    }  
+
+                    .navbarMenu{
+                        background-image: url(../Bootstrap/imagens/cidadeFosco.jpg);
+                        background-position-y: 60%;
+                        background-size: 100%,100px;
+                        z-index: 3;
+                       
+                        }  
+                        
+
+                        .logoNav1{
+                            border-radius: 20px;
+                            border: 1px black;
+                            }
+
+                            .btn{
+                                width: 13vw;
+                                height: 4vw;
+                                color: white;
+                                font-size: 2vw;
+                                z-index: 2;
+                                }
+
+                                .margin{
+                                    padding-top: 40px;
+                                    padding-bottom: 50px;
+                                    }
+
+
+body{
+background-color:black;
+font:20px arial,serial-serif;
+}
+
+.bg_video{
+
+    position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background: url(../Bootstrap/imagens/truckSun.jpg) no-repeat;
+	background-size: cover;
+
+}
+
+
+
+
+
