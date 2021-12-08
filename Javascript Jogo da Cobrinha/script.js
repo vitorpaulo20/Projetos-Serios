@@ -27,8 +27,9 @@ function criarCobrinha() {
 }
 
 
+// Para não virar a cobrinha no lado contrario da direção e evento passar 
+//teclas do teclado para essa função. 
 document.addEventListener('keydown', update);
-
 function update(event){
 if(event.keyCode == 37 && direction != "right") direction = "left";
 if(event.keyCode == 38 && direction != "down") direction = "up";
@@ -40,37 +41,52 @@ if(event.keyCode == 40 && direction != "up") direction = "down";
 
 
 function iniciarJogo(){
+//Cria Margens impedindo a cobrinha de seguir infinitamente direto e quando ela atravessa a tela fazendo com que ela volte para posição do outro lado da tela. 
+
 if(snake[0].x > 15 * box && direction == "right") snake[0].x = 0;
 if(snake[0].x < 0  && direction == "left") snake[0].x = 16 * box;
 if(snake[0].y > 15 * box  && direction == "down") snake[0].y = 0;
 if(snake[0].y < 0  && direction == "up") snake[0].y = 16 * box;
 
 
-
+//Chama o background e a cobrinha funções
     criarBG();
     criarCobrinha();
+    drawnFood();
+
+//Posiciona a cobrinha no plano estanciando sua posição como x=0 e y=0 plano cartesiano    
 let snakeX = snake[0].x;
 let snakeY = snake[0].y;
 
 if(direction == "right") snakeX += box;
 if(direction == "left") snakeX -= box;
-
 if(direction == "up") snakeY -= box;
 if(direction == "down") snakeY += box;
 
 //Remove o ultimo elemento do array
 snake.pop();
-
 let newHead = {
 x: snakeX,
 y: snakeY
 }
-
 snake.unshift(newHead);
+}
 
+let food={
+x: Math.floor(Math.random() * 15 + 1) * box,
+y: Math.floor(Math.random() * 15 +1) * box
 
 }
 
-// função de tempod de jogo com inicar jogo para o jogo não travar
+function drawnFood(){
+context.fillStyle = "red";
+context.fillRect(food.x, food.y, box, box);
 
+}
+
+
+
+// função de tempod de jogo com inicar jogo para o jogo não travar
 let jogo = setInterval(iniciarJogo , 100);
+
+
