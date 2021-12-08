@@ -5,10 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="script.js"></script>
-    <title>Document</title>
+    <title>Jogo da Cobrinha</title>
+    <style>
+#snake{
+  border-radius: 10px;
+  border-width: medium;
+  border-style: groove;
+  border-color: green;
+}
+#tituloSnake{
+z-index: 1;
+}
+
+body{
+height: 100vh;
+width: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+color: orangered;
+background-image: url(./imagens/selvaPintura.jpg);
+}
+
+    </style>
 
 </head>
 <body>
+
+    <h1 id="tituloSnake">Jogo da Cobrinha</h1>
+
     <canvas id="snake" width="512" height="512" ></canvas>
 </body>
 
