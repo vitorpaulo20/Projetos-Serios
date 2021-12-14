@@ -41,7 +41,7 @@ if(event.keyCode == 40 && direction != "up") direction = "down";
 
 
 function iniciarJogo(){
-
+    let score = 0;
 //Cria Margens impedindo a cobrinha de seguir infinitamente direto e quando ela atravessa a tela fazendo com que ela volte para posição do outro lado da tela. 
 
 if(snake[0].x > 15 * box && direction == "right") snake[0].x = 0;
@@ -50,10 +50,10 @@ if(snake[0].y > 15 * box  && direction == "down") snake[0].y = 0;
 if(snake[0].y < 0  && direction == "up") snake[0].y = 16 * box;
 
 for(i=1;i<snake.length;i++){
-
+score = i;
 if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
 clearInterval(jogo);
-alert('Game over (* _ *)');
+alert('Game over seu score é:  ','score');
 }
 }
 //Chama o background e a cobrinha funções
@@ -65,6 +65,7 @@ alert('Game over (* _ *)');
 let snakeX = snake[0].x;
 let snakeY = snake[0].y;
 
+
 if(direction == "right") snakeX += box;
 if(direction == "left") snakeX -= box;
 if(direction == "up") snakeY -= box;
@@ -74,6 +75,7 @@ if(snakeX != food.x || snakeY != food.y){
     snake.pop();   
 }
 else{
+  score++  
   food.x = Math.floor(Math.random() * 15 + 1) * box;
   food.y = Math.floor(Math.random() * 15 +1) * box;
 }
@@ -104,6 +106,9 @@ context.fillRect(food.x, food.y, box, box);
 
 
 // função de tempod de jogo com inicar jogo para o jogo não travar
+
+
+
 let jogo = setInterval(iniciarJogo , 100);
 
 
