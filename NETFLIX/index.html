@@ -2,55 +2,179 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style/main.css">
+
+    <link rel="stylesheet" type="text/css"
+                href="../Site com bootstrap html e css estilo carrossel/css/bootstrap.min.css">
+        <script rel="text/javascript"
+                src="../Site com bootstrap html e css estilo carrossel/index.js"></script>
+
+                <link rel="stylesheet" type="text/css"
+                href="../Site com bootstrap html e css estilo carrossel/js/bootstrap.bundle.min.js">
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous"></script>
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
     <title>NETFLIX CLONE</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-<div class="container">
-<h2 class="logo" >NETFLIX</h2>
-<nav>
-<a href="#">Inicio</a>
-<a href="#">Séries</a>
-<a href="#">Filmes</a>
-<a href="#">Documentarios</a>
-</nav>
-</div>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            class="mais btn btn-success">Mais</button>
+            </nav>
+        </div>
+    
+
+
     </header>
-
-
+    <div class="conteiner-geral">
     <main>
-<div class="filme-principal">
-    <div class="container">
-        <h3 class="titulo"> THE WITCHER</h3>
-        <p class="descricao">O mutante Geralt de Rívia é um caçador de monstros que luta para encontrar seu lugar num mundo onde as pessoas muitas vezes são mais perversas que as criaturas selvagens.</p>
+        <div class="filme-principal">
+            <div class="container">
+<!-- MODAL SIDEBAR -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                    <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Menu contatos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
 
-        
-    <div class="button">
-        <button type="button" role="button" class="botao" > 
-            <i class="fa fa-play"></i>
-            ASSISTIR AGORA
-        </button>
-
-        <button type="button" role="button" class="botao">
-            <i class="fas fa-info-circle"></i>
-            MAIS INFORMAÇÕES
-        </button>
-    
-        
+                            <img id="imgSideBar"
+                                    src="../Site com bootstrap html e css estilo carrossel/imagens/livro-de-contatos color.png">
+                            <label class="labelSide">Loja 01 - Jaboatão</label>
+                            </br></br>
+                            <b class="contatosSide">(81)3518-5933</b>
+                            <hr>
+                    </div>
+                    <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+            </div>
     </div>
-
-    </div>
-
-    
 </div>
 
+                <h3 class="titulo">THE WITHCER</h3>
+                <p class="descricao">O mutante Geralt de Rívia é um caçador de monstros que luta para encontrar seu lugar num mundo onde as pessoas muitas vezes são mais perversas que as criaturas selvagens.</p>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
     </main>
 
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img//homemaranha.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/johnwick3.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/matrix4.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/vingadoresult.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini5.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini3.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini7.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini8.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini9.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini10.jpg" alt="" srcset="">
+                </div>
+        </div>
+    </div>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img//homemaranha.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/johnwick3.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/matrix4.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/vingadoresult.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini5.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini3.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini7.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini8.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini9.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini10.jpg" alt="" srcset="">
+                </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center byPaulo">
+        <p >Desenvolvido por Paulo Vitor</p>
+</div>  
 
 
+
+</div>
+
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+ 
+
+ 
 </body>
 </html>

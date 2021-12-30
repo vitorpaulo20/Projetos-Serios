@@ -84,10 +84,31 @@ background-color: white;
 color: black;
 }
 
-.botao{
-
+.container{
+margin-left: 10px;
 
 }
+
+.filme-principal .container{
+
+    width: 60%;
+}
+
+.carousel .d-block{
+
+width: 100px;
+height: 250px;
+
+}
+
+.carousel{
+
+height: 100px;
+width: 250px;
+
+}
+
+
 
 
 
