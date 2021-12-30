@@ -17,7 +17,8 @@ color: white;
 }
 
 header .container{
-    flex-direction: row;
+background: var(--preto);
+flex-direction: row;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -44,7 +45,7 @@ color: #fff;
 /*Filme pricipal */
 .filme-principal{
 font-size: 16px;
-background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/witcher.jpg');
+
 height: 400px;
 background-size: cover;
 display: flex;
@@ -61,7 +62,7 @@ margin-top: 10px;
 
 
 .filme-principal .titulo{
-    margin-top: 15%;
+margin-top: 15%;
 font-size: 40px;
 font-family: 'Trebuchet MS', Arial,sans-serif;
 }
@@ -76,39 +77,35 @@ font-size: 12px;
 
 cursor: pointer;
 transition: 3s ease all;
-
 }
 
 .botao:hover{
-background-color: white;
 color: black;
 }
 
 .container{
 margin-left: 10px;
-
 }
 
 .filme-principal .container{
-
     width: 60%;
 }
 
 .carousel .d-block{
-
 width: 100px;
 height: 250px;
-
 }
 
 .carousel{
-
 height: 100px;
 width: 250px;
-
 }
 
+.container-fluid .desenvolvedor{
+font-family: serif;
+font-size: 5px;
 
+}
 
 
 
