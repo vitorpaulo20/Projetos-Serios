@@ -45,7 +45,6 @@ color: #fff;
 /*Filme pricipal */
 .filme-principal{
 font-size: 16px;
-
 height: 400px;
 background-size: cover;
 display: flex;
@@ -62,6 +61,7 @@ margin-top: 10px;
 
 
 .filme-principal .titulo{
+color: blanchedalmond;
 margin-top: 15%;
 font-size: 40px;
 font-family: 'Trebuchet MS', Arial,sans-serif;
